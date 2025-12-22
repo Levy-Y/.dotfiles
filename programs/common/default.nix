@@ -25,10 +25,14 @@
     zip
     unzip
     unrar
+    powershell
 
     # Gui
     lmstudio
     bitwarden-desktop
+    protonvpn-gui
+    insomnia
+    anydesk
 
     # Fonts
     meslo-lgs-nf
