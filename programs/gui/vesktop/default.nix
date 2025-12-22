@@ -13,6 +13,7 @@
     settings = {
       discordBranch = "stable";
       transparencyOption = "acrylic";
+      arRPC = true;
       tray = true;
       minimizeToTray = true;
       autoStartMinimized = true;
@@ -22,27 +23,36 @@
       hardwareVideoAcceleration = true;
       enableSplashScreen = true;
       splashTheming = true;
-      splashBackground = "#000000";
-      splashColor = "#ffffff";
     };
 
-    vencord.settings = {
-      autoUpdate = false;
-      autoUpdateNotification = false;
-      notifyAboutUpdates = false;
-      useQuickCss = true;
-      disableMinSize = true;
-      enableTheme = [ "catppuccin-macchiato.theme.css" ];
-      
-      plugins = {
-        MessageLogger = {
-          enabled = true;
-          ignoreSelf = true;
-        };
-        FakeNitro.enabled = true;
+    vencord = {
+      themes = {
+        "system24" = ./system24.theme.css;
+        "system24-catppuccin-macchiato" = ./system24-catppuccin-macchiato.theme.css;
+        "midnight" = ./midnight.theme.css;
+        "midnight-catppuccin-macchiato" = ./midnight-catppuccin-macchiato.theme.css;
       };
+      
+      settings = {
+        autoUpdate = false;
+        autoUpdateNotification = false;
+        notifyAboutUpdates = false;
+        useQuickCss = true;
+        disableMinSize = true;
+        
+        plugins = {
+          MessageLogger = {
+            enabled = true;
+            ignoreSelf = true;
+          };
+          FakeNitro.enabled = true;
+          ClearURLs.enabled = true;
+          BiggerStreamPreview.enabled = true;
+          SilentTyping.enabled = true;
+        };
 
-      themes = builtins.toPath ./catppuccin-macchiato.theme.css;
+        enabledThemes = [ "system24.css" ];
+      };
     };
   };
 }
