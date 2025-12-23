@@ -25,6 +25,7 @@ Configuration is modularized under the `programs/` directory:
 | **Ulauncher** | GUI |
 | **Vesktop** | GUI |
 | **VS Code** | GUI |
+| **Bitwarden** | GUI |
 
 ## Installation
 

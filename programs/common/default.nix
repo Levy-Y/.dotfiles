@@ -29,7 +29,6 @@
 
     # Gui
     lmstudio
-    bitwarden-desktop
     protonvpn-gui
     insomnia
     anydesk
