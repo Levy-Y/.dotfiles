@@ -53,7 +53,6 @@
         github.copilot
         jnoortheen.nix-ide
         ms-python.vscode-python-envs
-        github.copilot-chat
       ];
       
       userSettings = builtins.fromJSON (builtins.readFile ./vscode.json);

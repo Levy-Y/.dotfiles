@@ -26,12 +26,14 @@
     unzip
     unrar
     powershell
+    ngrok
 
     # Gui
     lmstudio
     protonvpn-gui
     insomnia
     anydesk
+    jetbrains-toolbox
 
     # Fonts
     meslo-lgs-nf
