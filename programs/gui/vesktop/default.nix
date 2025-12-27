@@ -49,6 +49,9 @@
           ClearURLs.enabled = true;
           BiggerStreamPreview.enabled = true;
           SilentTyping.enabled = true;
+          ShikiCodeblocks.enabled = true;
+          VoiceMessages.enabled = true;
+          VolumeBooster.enabled = true;
         };
 
         enabledThemes = [ "system24.css" ];
