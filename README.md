@@ -26,6 +26,7 @@ Configuration is modularized under the `programs/` directory:
 | **Vesktop** | GUI |
 | **VS Code** | GUI |
 | **Bitwarden** | GUI |
+| **Brave** | GUI |
 
 ## Installation
 
