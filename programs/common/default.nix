@@ -14,7 +14,7 @@
     act
     xclip
     nil
-    terraform
+    opentofu
     packer
     shellcheck
     ansible
