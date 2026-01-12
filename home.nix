@@ -10,6 +10,8 @@
     direnv.enable = true;
   };
 
+  fonts.fontconfig.enable = true;
+
   imports = [
     ./programs/common/default.nix
     ./programs/gui/default.nix
