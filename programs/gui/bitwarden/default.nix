@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   home = {
     packages = with pkgs; [
@@ -6,7 +6,7 @@
     ];
 
     sessionVariables = {
-      SSH_AUTH_SOCK = ${home.homeDirectory}/.bitwarden-ssh-agent.sock;
+      SSH_AUTH_SOCK = builtins.toPath "${config.home.homeDirectory}/.bitwarden-ssh-agent.sock";
     };
   };
 }
